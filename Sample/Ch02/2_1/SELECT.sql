@@ -5,10 +5,12 @@
  * SELECT 语句中可以使用常数或者表达式。
  * 通过指定DISTINCT可以删除重复的行。
  * SQL 语句中可以使用注释。
-* 可以通过WHERE语句从表中选取出符合查询条件的数据。
+ * 可以通过WHERE语句从表中选取出符合查询条件的数据。
  */
 
+-- 查询表中所有的列
 SELECT * from Product;
+
 SELECT product_id, product_name, product_type, sale_price, purchase_price, regist_date from Product;
 
 -- 设定汉语别名时需要使用双引号(")括起来。
