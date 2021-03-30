@@ -23,6 +23,7 @@ INSERT INTO SampleLike(strcol) VALUES ('fjdfddd');
 INSERT INTO SampleLike(strcol) VALUES ('ffjddd');
 INSERT INTO SampleLike(strcol) VALUES ('jdddfjj');
 INSERT INTO SampleLike(strcol) VALUES ('kkfj');
+
 COMMIT;
 
 SELECT * FROM SampleLike;
@@ -38,7 +39,7 @@ SELECT * FROM SampleLike WHERE strcol LIKE '%ddd%';
 SELECT * FROM SampleLike WHERE strcol LIKE '%ddd';
 
 -- _ 表示任意 1 个字符，以下的查询查到的确认只能是 6 个字符
-SELECT * FROM SampleLike WHERE strcol LIKE 'ddd___'
+SELECT * FROM SampleLike WHERE strcol LIKE 'ddd___';
 
 -- BETWEEN 谓词 范围查询
 -- 查出 product_name 的 sale_price 在 100 和 1000 之间的数据，包含 100 和 1000
